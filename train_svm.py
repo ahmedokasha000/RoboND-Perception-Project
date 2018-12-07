@@ -65,7 +65,7 @@ y_train = encoder.fit_transform(y_train)
 clf = svm.SVC(kernel='linear')
 
 # Set up 5-fold cross-validation
-kf =model_selection.KFold( n_splits=5,
+kf =model_selection.KFold( n_splits=20,
                             shuffle=True,
                             random_state=1)
 kf=kf.get_n_splits(len(X_train))
